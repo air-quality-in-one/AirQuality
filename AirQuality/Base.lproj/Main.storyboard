@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IDq-oi-F2W">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <scenes>
+        <!--排行-->
+        <scene sceneID="53K-aP-flG">
+            <objects>
+                <viewController id="du4-uy-Mae" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SyZ-mg-sJJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="7vA-2K-y8b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="idk-Kf-uAi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="排行" image="Trend" id="UcJ-1a-diT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bBS-K3-rNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="-629"/>
+        </scene>
+        <!--设置-->
+        <scene sceneID="JRM-eP-peE">
+            <objects>
+                <viewController id="UoJ-6O-XOI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="By2-W3-Yhe"/>
+                        <viewControllerLayoutGuide type="bottom" id="bMQ-YQ-F2K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mST-eI-6NI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="设置" image="Setting" id="LcQ-ng-1T7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x17-4s-krW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="95"/>
+        </scene>
+        <!--实况-->
+        <scene sceneID="iDX-hE-mSq">
+            <objects>
+                <viewController id="VFU-KQ-8cz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Imt-DD-e1q"/>
+                        <viewControllerLayoutGuide type="bottom" id="b6R-w9-IfZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qLl-Oh-9ib">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="实况" image="AirQuality" id="ce2-Bw-lY5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zsE-g3-Qcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="-1347"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wPq-TE-QyA">
+            <objects>
+                <tabBarController id="IDq-oi-F2W" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="fill" id="Hkb-ik-hzR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VFU-KQ-8cz" kind="relationship" relationship="viewControllers" id="mUU-lL-vTX"/>
+                        <segue destination="du4-uy-Mae" kind="relationship" relationship="viewControllers" id="r6S-Pe-oQK"/>
+                        <segue destination="UoJ-6O-XOI" kind="relationship" relationship="viewControllers" id="XZH-gV-xf7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ead-c0-0j9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-811" y="-562"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AirQuality" width="32" height="32"/>
+        <image name="Setting" width="32" height="32"/>
+        <image name="Trend" width="32" height="32"/>
+    </resources>
+</document>
